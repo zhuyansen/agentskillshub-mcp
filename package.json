@@ -1,0 +1,49 @@
+{
+  "name": "@agentskillshub/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for AgentSkillsHub — search, audit, and install open-source AI agent skills & MCP servers from inside your agent. Security-graded, quality-scored. Zero backend load.",
+  "type": "module",
+  "bin": {
+    "agentskillshub-mcp": "src/index.mjs"
+  },
+  "main": "src/index.mjs",
+  "files": [
+    "src/index.mjs",
+    "src/catalog.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node test/smoke.mjs"
+  },
+  "author": "Jason Zhu (AgentSkillsHub)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuyansen/agentskillshub-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhuyansen/agentskillshub-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "ai-agent",
+    "claude",
+    "claude-code",
+    "cursor",
+    "skills",
+    "security-audit",
+    "agent-tools"
+  ],
+  "homepage": "https://agentskillshub.top",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  }
+}
