@@ -2,25 +2,31 @@
   "manifest_version": "0.2",
   "name": "agentskillshub",
   "display_name": "AgentSkillsHub",
-  "version": "0.1.0",
-  "description": "Search, audit, and install 117K+ AI agent skills & MCP servers — every result carries a security grade checked BEFORE installing.",
-  "long_description": "Skill discovery with a trust signal built in. Search a catalog of 117K+ open-source AI agent skills & MCP servers (quality subset ~22K), get a free basic security audit (SAFE/CAUTION/UNSAFE/REJECT/UNAUDITED + red flags), and fetch install commands. All lookups run against a static CDN index cached locally — fast, offline-capable, zero backend load.",
-  "author": { "name": "Jason Zhu (AgentSkillsHub)", "url": "https://agentskillshub.top" },
+  "version": "0.2.0",
+  "description": "Search, audit, and install 117K+ AI agent skills & MCP servers \u2014 every result carries a security grade checked BEFORE installing.",
+  "long_description": "Skill discovery with a trust signal built in. Search a catalog of 117K+ open-source AI agent skills & MCP servers (quality subset ~22K), get a free basic security audit (SAFE/CAUTION/UNSAFE/REJECT/UNAUDITED + red flags), and fetch install commands. All lookups run against a static CDN index cached locally \u2014 fast, offline-capable, zero backend load.",
+  "author": {
+    "name": "Jason Zhu (AgentSkillsHub)",
+    "url": "https://agentskillshub.top"
+  },
   "homepage": "https://agentskillshub.top",
   "documentation": "https://github.com/zhuyansen/agentskillshub-mcp",
   "license": "MIT",
-  "keywords": ["mcp", "skills", "security-audit", "claude", "agent-tools"],
+  "keywords": [
+    "mcp",
+    "skills",
+    "security-audit",
+    "claude",
+    "agent-tools"
+  ],
   "server": {
     "type": "node",
     "entry_point": "src/index.mjs",
     "mcp_config": {
       "command": "node",
-      "args": ["${__dirname}/src/index.mjs"]
+      "args": [
+        "${__dirname}/src/index.mjs"
+      ]
     }
-  },
-  "tools": [
-    { "name": "search_skills", "description": "Natural-language search with filters; results include security_grade + estimated token cost" },
-    { "name": "audit_skill", "description": "Free basic trust check: security grade, red flags, plain-English verdict" },
-    { "name": "get_skill_install", "description": "Install commands per runtime + check-before-you-install safety line" }
-  ]
+  }
 }

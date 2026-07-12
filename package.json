@@ -1,6 +1,6 @@
 {
   "name": "@agentskillshub/mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MCP server for AgentSkillsHub — search, audit, and install open-source AI agent skills & MCP servers from inside your agent. Security-graded, quality-scored. Zero backend load.",
   "type": "module",
   "bin": {
